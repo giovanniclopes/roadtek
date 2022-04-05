@@ -1,4 +1,4 @@
-![Logo](images/logo.png)
+![Logo](images/p-roadtek-2.png)
 
 
 # Roadtek: 
