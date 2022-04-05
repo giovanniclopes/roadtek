@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --title-font: 'Poppins', sans-serif;
+    --text-font: 'Roboto', sans-serif;
+    --color1: #051821;
+    --color2: #1A4645;
+    --color3: #266867;
+    --color4: #32acaa;
+    --color5: #E9E9E6;
+    --color6: #c1c4c5;
+    --text-color1: #2E2E2E;
+    --text-color2: #F9F9F9;
+
+    /*
+    paleta secundaria:
+
+    --color7: #15265C;
+    --color8: #2EE09A;
+    --color9: #EF84F5;
+    --color10: #FFFFFF;
+    */
+}
+
+/* definindo as variáveis */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(-95deg, var(--color1), var(--color3));
+}
+
+h1 {
+    font: 600 2.5em var(--title-font);
+}
+
+h2,h3,h4,h5,h6 {
+    font: 600 1.9em var(--title-font);
+}
+
+p {
+    font: 500 1.2em var(--text-font);
+}
+
+/* menu */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+    background: #0518217e;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+
+.logo {
+    width: 40px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.logo:hover {
+    content: url(images/p-roadtek-3.png);
+}
+
+.logo:active {
+    content: url(images/p-roadtek.png);
+}
+
+.navbar {
+    margin-left: 50px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-item {
+    font: 500 1.2em var(--title-font);
+    color: var(--color5);
+    cursor: pointer;
+    transition: .4s;
+}
+
+.nav-item:hover {
+    color: var(--color4);
+}
+
+.nav-item:active {
+    color: var(--color4);
+}
+
+.nav-item::selection {
+    user-select: contain;
+}
+
+.gamebar {
+    margin-left: 600px;
+}
+/*
+.btn-gamebar {
+    font: 500 1.2em var(--title-font);
+    background: rgba(17, 25, 40, 0.75);
+    color: var(--color5);
+    border-radius: 4px;
+    width: max-content;
+    border: none;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btn-gamebar:hover {
+    color: var(--color4);
+}
+*/
+
+.btn-gamebar {
+    font: 500 1.2em var(--title-font);
+    padding: 12px 20px;
+    outline: none;
+    width: max-content;
+    border: 1px solid var(--color4);
+    background: none;
+    color: var(--color4);
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-gamebar:hover {
+    box-shadow: 0 0 10px var(--color4), 0 0 25px var(--color3), 0 0 50px var(--color2);
+    transition: .4s;
+    background: var(--color1);
+   }
+   
+   
+@media (max-width: 600px) {
+    header {
+        height: 80px;
+    }
+    .gamebar {
+        display: none;
+    }
+    .btn-gamebar {
+        display: none;
+    }
+}
+
