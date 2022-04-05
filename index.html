@@ -9,26 +9,30 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="navlogo">
-        <a href="#">
-          <img src="images/p-roadtek-2.png" class="logo" alt="">
-        </a>
-      </div>
-      <div class="navbar">
-        <ul>
-          <li class="nav-item">Home</li>
-          <li class="nav-item">Sobre</li>
-          <li class="nav-item">Contato</li>
+  <header id="header">
+    <a href="index.html" id="logo">
+        <img src="images/p-roadtek-2.png" id="logo" alt="Logo Roadktek">
+    </a>
+    <nav id="nav">
+        <button aria-label="Abrir menu" id="btn-mobile">
+
+            <span id="hamburguer"></span>
+        </button>
+        <ul id="menu">
+            <li><a href="index.html" class="home-nav-item">Home</a></li>
+            <li><a href="sobre.html" class="nav-item">Sobre</a></li>
+            <li><a href="contato.html" class="nav-item">Contato</a></li>
+            <li class="mobile-item"><a href="jogar-agora.html">Jogar agora!</a></li>
         </ul>
-      </div>
-      <div class="gamebar">
-        <ul>
-          <button class="btn-gamebar">Jogar agora!</button>
-        </ul>
-      </div>
+        <div class="gamebar">
+          <ul>
+            <button class="btn-gamebar">
+              <a href="jogar-agora.html">Jogar agora!</a>
+            </button>
+          </ul>
+        </div>
     </nav>
   </header>
+  <script src="script.js"></script>
 </body>
 </html>
