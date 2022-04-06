@@ -140,7 +140,6 @@ p {
       padding: 0 10px 0 10px;
       background: #0518217e;
     }
-
     #logo {
         width: 50px;
     }    
@@ -148,7 +147,7 @@ p {
         display: block;
         position: absolute;
         width: 100%;
-        top: 85px;
+        top: 65px;
         right: 0px;
         background: linear-gradient( 20deg, #030f14, #131313);
         border-radius: 5px;
@@ -323,13 +322,14 @@ p {
 footer {
     background: #0518217e;
     color: var(--color5);
-    padding: 10px 40px
+    padding: 16px 40px
 }
 
 #footer-items {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     gap: 25px;
+    border-bottom: 2px solid var(--color3);
 }
 
 
