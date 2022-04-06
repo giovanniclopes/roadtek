@@ -39,7 +39,7 @@ h2,h3,h4,h5,h6 {
 }
 
 p {
-    font: 500 1.2em var(--text-font);
+    font: 400 1.2em var(--text-font);
 }
 
 /* menu */
@@ -67,6 +67,7 @@ p {
     justify-content: space-between;
     padding: 0px 40px;
     background: #0518217e;
+    border-bottom: 2px solid var(--color3);
 }
 
 #nav {
@@ -86,7 +87,7 @@ p {
 }
 
 #menu a {
-    font: bold 1.4em var(--title-font);
+    font: bold 1.3em var(--title-font);
     display: block;
     padding: 15px;
     color: var(--color5);
@@ -150,7 +151,7 @@ p {
         overflow-y: hidden;
     }
     #nav.active #menu {
-        height: calc(100vh - 50vh);
+        height: calc(100vh - 40vh);
         visibility: visible;
         overflow-y: auto;
     }
@@ -162,7 +163,11 @@ p {
         border-radius: 5px;
     }
     #menu a:hover {
+        color: var(--color4);
         background: none;
+    }
+    #menu a:focus {
+        color: var(--color2);
     }
     .mobile-item {
         display: flex;
@@ -281,3 +286,38 @@ p {
     }
 }
 
+/* first section */
+
+#first-section {
+    height: 100px;
+    background: var(--color5);
+}
+
+/* secondly section */
+
+#secondly-section {
+    height: 100px;
+    background: var(--color6);
+    grid-template-columns: 3fr 1fr;
+}
+
+/* terciary section */
+
+#terciary-section {
+    height: 100px;
+    background: var(--color5);
+}
+
+/* footer */
+
+footer {
+    background: var(--color1);
+    color: var(--color5);
+    padding: 10px 40px;
+}
+
+#footer-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
