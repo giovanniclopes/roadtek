@@ -34,8 +34,16 @@ h1 {
     font: 600 2.5em var(--title-font);
 }
 
-h2,h3,h4,h5,h6 {
+h2 {
     font: 600 1.9em var(--title-font);
+}
+
+h3 {
+    font: 600 1.4em var(--title-font);
+}
+
+h4,h5,h6 {
+    font: 600 1em var(--title-font);
 }
 
 p {
@@ -290,6 +298,7 @@ p {
 
 #first-section {
     height: 100px;
+    padding: 5px;
     background: var(--color5);
 }
 
@@ -297,27 +306,93 @@ p {
 
 #secondly-section {
     height: 100px;
+    padding: 5px;
     background: var(--color6);
-    grid-template-columns: 3fr 1fr;
 }
 
 /* terciary section */
 
 #terciary-section {
     height: 100px;
+    padding: 5px;
     background: var(--color5);
 }
 
 /* footer */
 
 footer {
-    background: var(--color1);
+    background: #0518217e;
     color: var(--color5);
-    padding: 10px 40px;
+    padding: 10px 40px
 }
 
 #footer-items {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 2fr 1fr 1fr 1fr;
     gap: 25px;
+}
+
+
+.footer-list-1 h1 > a {
+    all: unset;
+    cursor: pointer;
+}
+
+.footer-list-1 h1:hover {
+    color: var(--color4);
+}
+.footer-list-1 h1 a:focus {
+    color: var(--color2);
+}
+
+
+.footer-navigation ul {
+    list-style: none;
+    display: grid;
+    gap: 3px;
+}
+
+.footer-navigation ul >li >a {
+    font: 400 1em var(--title-font);
+    color: var(--color6);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer-info ul {
+    list-style: none;
+    display: grid;
+    gap: 3px;
+}
+
+.footer-info ul >li >a {
+    font: 400 1em var(--title-font);
+    color: var(--color6);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer-legal ul {
+    list-style: none;
+    display: grid;
+    gap: 3px;
+}
+
+.footer-legal ul >li >a {
+    font: 400 1em var(--title-font);
+    color: var(--color6);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    #footer-items {
+        display: grid;
+        grid-template-columns: none;
+        gap: 20px;
+    }
+
+    #footer-items div {
+        border-bottom: 2px solid #030f14;
+    }
 }
