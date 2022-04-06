@@ -55,6 +55,7 @@ p {
     font: 400 1.2em var(--text-font);
 }
 
+
 /* menu */
 
 .nav-item {
@@ -350,6 +351,16 @@ footer {
     color: var(--color2);
 }
 
+.footer-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#footer-logo {
+    width: 60px;
+    height: 70px;
+}
 
 .footer-navigation ul {
     list-style: none;
