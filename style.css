@@ -24,6 +24,11 @@
 
 /* definindo as variáveis */
 
+*::selection {
+    background: var(--color4);
+    color: var(--color1);
+}
+
 body {
     margin: 0;
     padding: 0;
