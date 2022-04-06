@@ -362,6 +362,10 @@ footer {
     height: 70px;
 }
 
+#footer-logo:hover {
+    content: url(images/p-roadtek-3.png);
+}
+
 .footer-navigation ul {
     list-style: none;
     display: grid;
