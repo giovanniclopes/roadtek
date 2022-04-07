@@ -302,15 +302,15 @@ p {
 /* first section */
 
 #first-section {
-    height: 100px;
-    padding: 5px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    padding: 5px 20px;
     background: var(--color5);
 }
 
 /* secondly section */
 
 #secondly-section {
-    height: 100px;
     padding: 5px;
     background: var(--color6);
 }
@@ -318,7 +318,6 @@ p {
 /* terciary section */
 
 #terciary-section {
-    height: 100px;
     padding: 5px;
     background: var(--color5);
 }
