@@ -323,6 +323,73 @@ p {
     background: var(--color5);
 }
 
+/* contact */
+
+#contact {
+    display: flex;
+    padding: 60px 20px;
+    justify-content: center;
+}
+
+.contact-form {
+    max-width: 800px;
+    width: 100%;
+    background: linear-gradient(45deg, #1a1a1a, #000000);
+    padding: 40px 40px 70px 40px;
+    border-radius: 10px;
+}
+
+.contact-form h1 {
+    text-align: center;
+    color: var(--text-color2);  
+    margin-bottom: 50px;  
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    font: normal 1.4em var(--text-font);
+    color: var(--color5);
+}
+
+.field {
+    margin-bottom: 20px;
+    margin-top: 3px;
+    padding: 13px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    font: normal .8em var(--text-font);
+}
+
+.field:focus {
+    border: 2px solid var(--color4);
+}
+
+#message {
+    height: 200px;
+}
+
+.submit-btn {
+    background: linear-gradient(45deg, var(--color2), var(--color3));
+    font: normal .9em var(--text-font);
+    color: var(--text-color2);
+    border: none;
+    padding: 20px 15px;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.submit-btn:hover {
+    filter: brightness(75%);
+}
+
+.submit-btn:focus {
+    transform: translateY(3px);
+}
+
 /* footer */
 
 footer {

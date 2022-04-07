@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roadtek</title>
+  <link rel="shortcut icon" href="images/roadtek-icon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="header">
+    <a href="index.html" id="logo">
+        <img src="images/p-roadtek-2.png" id="logo" alt="Logo Roadktek">
+    </a>
+    <nav id="nav">
+        <button aria-label="Abrir menu" id="btn-mobile">
+
+            <span id="hamburguer"></span>
+        </button>
+        <ul id="menu">
+            <li><a href="index.html" class="home-nav-item">Home</a></li>
+            <li><a href="sobre.html" class="nav-item">Sobre</a></li>
+            <li><a href="contato.html" class="nav-item">Contato</a></li>
+            <li class="mobile-item"><a href="jogar-agora.html">Jogar agora!</a></li>
+        </ul>
+        <div class="gamebar">
+          <ul>
+            <button class="btn-gamebar">
+              <a href="jogar-agora.html">Jogar agora!</a>
+            </button>
+          </ul>
+        </div>
+    </nav>
+  </header>
+
+  <section id="contact">
+      <div class="contact-form">
+        <h1>Entre em contato</h1>
+        <form method="post">
+            <label for="name">Nome:</label>
+            <input type="text" name="email" id="name" class="field" placeholder="Nos diga seu nome" required>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" class="field" placeholder="Nos diga seu email" required>
+            <label for="message">Sua mensagem</label>
+            <textarea name="message" id="message" class="field" cols="30" rows="10" placeholder="Olá! Eu gostaria de falar sobre {assunto}." required></textarea>
+            <input type="submit" class="submit-btn" value="Enviar mensagem">
+        </form>
+    </div>
+  </section>
+  
+  <footer>
+      <div id="footer-items">
+        <div class="footer-list-1">
+          <div class="footer-list">
+            <img src="images/p-roadtek-2.png" id="footer-logo" alt="">
+            <h1><a href="index.html">Road<span style="color: #32acaa">tek</span>™</a></h1>
+          </div>
+            <p>Conectamos o mundo real com o mundo digital.</p>
+            <p><b>Dirija sua vida com segurança.</b></p>
+        </div>
+        <div class="footer-navigation">
+          <h4>Explorar</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-info">
+          <h4>Informação</h3>
+          <ul>
+            <li><a href="#">Feira de Ciências</a></li>
+            <li><a href="#">2022</a></li>
+            <li><a href="#">1T2INAC</a></li>
+          </ul>
+        </div>
+        <div class="footer-legal">
+          <h4>Jurídico</h3>
+          <ul>
+            <li><a href="">Termos</a></li>
+            <li><a href="">Privacidade</a></li>
+          </ul>
+        </div>
+      </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
